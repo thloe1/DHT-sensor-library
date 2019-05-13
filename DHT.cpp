@@ -7,7 +7,7 @@ written by Adafruit Industries
 #include "DHT.h"
 
 #define MIN_INTERVAL 2000
-#define TIMEOUT -1
+#define TIMEOUT ((uint32_t)-1)
 
 DHT::DHT(uint8_t pin, uint8_t type, uint8_t count) {
   _pin = pin;
